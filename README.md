@@ -1,12 +1,18 @@
-# PeterKnego/homebrew-tap
+# peterknego/homebrew-roost
 
 Homebrew formulae for [roost](https://github.com/PeterKnego/roost) — a
 per-project remote workspace in one binary: a browser IDE layout over real
 terminals that survive the tab.
 
 ```sh
-brew install PeterKnego/tap/roost
+brew install peterknego/roost/roost
 ```
+
+The repeated name is not a typo. Homebrew requires a tap repository to be
+called `homebrew-<name>`, so the repository `homebrew-roost` is the tap
+`peterknego/roost`, and the formula inside it is still called `roost`. There is
+no shorthand that collapses the two. Case does not matter — Homebrew downcases
+a tap name.
 
 The formulae here are generated and pushed by
 [dist](https://github.com/axodotdev/cargo-dist) on each tagged release of
