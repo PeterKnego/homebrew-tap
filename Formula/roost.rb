@@ -1,25 +1,25 @@
 class Roost < Formula
   desc "A per-project remote workspace in one binary: browser IDE layout over real terminals that survive the tab, built for AI-assisted development"
   homepage "https://github.com/PeterKnego/roost"
-  version "0.8.0"
+  version "0.9.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/PeterKnego/roost/releases/download/v0.8.0/roost-aarch64-apple-darwin.tar.xz"
-      sha256 "e4d264cb4302656fac93c8435401811be8d4b7e4bed87338eda02b2001f2ff47"
+      url "https://github.com/PeterKnego/roost/releases/download/v0.9.1/roost-aarch64-apple-darwin.tar.xz"
+      sha256 "fb00641386daf5ac6a3fa902f97610f1f7cf56b19fb181baf5623a8836ce6d8f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/PeterKnego/roost/releases/download/v0.8.0/roost-x86_64-apple-darwin.tar.xz"
-      sha256 "2cf9e16c95e59a2da2bcc0116e65037b72a7552b47fe73f983edf83bf2166669"
+      url "https://github.com/PeterKnego/roost/releases/download/v0.9.1/roost-x86_64-apple-darwin.tar.xz"
+      sha256 "0d25b85c7e317e60d591d426677dcd52ac9adca1a6f93b0aa7cf151702f8cf4a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/PeterKnego/roost/releases/download/v0.8.0/roost-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "0356c6c1368c856a8493f970da8b5767b9d3f58e7f97b09eb612300581abcc57"
+      url "https://github.com/PeterKnego/roost/releases/download/v0.9.1/roost-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "ce8ef4f18da729743ed27b4970edd5defa0b192289d25c0e44798ca618fdd3d5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/PeterKnego/roost/releases/download/v0.8.0/roost-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "be4743d4a572df9ea6535481f1dfecbc8533e8c59038dc36540e725e94330a78"
+      url "https://github.com/PeterKnego/roost/releases/download/v0.9.1/roost-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "10cbeea39701dae040929481e1f36ee7aa7579c226205d3fe746ca56ab9f1969"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
